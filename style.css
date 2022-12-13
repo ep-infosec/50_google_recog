@@ -1,0 +1,78 @@
+body {
+  background-color: white;
+  font-family: sans-serif;
+  margin: 1em;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+#handwriting {
+  height: 257px;
+  width: 193px;
+  cursor: crosshair;
+}
+
+#cells {
+  height: 257px;
+  width: 193px;
+}
+
+#resultsDiv {
+  height: 257px;
+  width: 193px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#results {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#results td {
+  padding: 4px 8px;
+  cursor: default;
+}
+
+#results tr:hover:not(.selected) {
+  background-color: #eee;
+}
+
+.percent {
+  text-align: right;
+}
+
+#learnDiv {
+  height: 257px;
+  width: 193px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+#supervisedDiv,
+#unsupervisedDiv {
+  display: none;
+}
+
+input[type="number"] {
+  text-align: right;
+  width: 4em;
+}
+
+.selected {
+  background-color: #9cf;
+}
+
+.footer {
+  font-size: small;
+  margin-top: 2em;
+}
+
+.balls {
+  float: right;
+}
